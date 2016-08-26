@@ -1,0 +1,53 @@
+div.tint-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #000;
+}
+
+i.fa {
+    font-size: 20px;
+}
+
+.social-networks > a {
+    background: red;
+}
+
+.social-networks > a > i{
+    margin-top: 6px;
+}
+.social-networks > a:hover > .fa-facebook {
+    color: #3b5998;
+}
+.social-networks > a:hover > .fa-linkedin {
+    color: #0077b5;
+}
+.social-networks > a:hover > .fa-twitter {
+    color: #4099FF;
+}
+.social-networks > a:hover > .fa-instagram {
+    color: #e95950;
+}
+.social-networks > a:hover > .fa-stack-overflow {
+    color: #FF9900;
+}
+.social-networks > a:hover > .fa-pencil {
+    color: #339999;
+}
+
+div.footer{
+    z-index: 4;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.footer p {
+    font-size: 11px !important;
+    color: rgba(256,256,256,0.4) !important;
+}
