@@ -1,16 +1,20 @@
-html{
-    height:100%;
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400');
+html {
+    height: 100%;
+    color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-body{
+body {
+    height: 100%;
+    margin: 0;
+}
+body > div {
     height: 100%;
 }
-body > div{
+body > div > div {
     height: 100%;
 }
-body > div > div{
-    height: 100%;
-}
-body > div > div > section{
+body > div > div > section {
     height: 100% !important;
 }
 div.tint-overlay {
@@ -19,23 +23,65 @@ div.tint-overlay {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: -1;
     background-color: #000;
+    opacity: 0.5;
 }
-
-@media (min-width: 861px){
+div.tint-overlay-gradiant {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(-45deg, #000f, #0000);
+    opacity: 0.7;
+}
+.wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.content {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 20px;
+    padding-bottom: 100px;
+    align-content: right;
+}
+.background {
+    padding: 0;
+    z-index: 4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% top;
+    background-attachment: fixed;
+}
+@media (min-width: 861px) {
     .social-networks > a {
         line-height: 32px;
     }
 }
-@media (max-width: 861px){
+@media (max-width: 861px) {
     .social-networks > a {
         line-height: 44px;
     }
 }
-
-.social-networks > a > i{
-    margin-top: 6px;
+.social {
+    color: rgba(256, 256, 256, 0.7);
+    font-size: 26px;
+    border-radius: 50%;
+    padding: 3px;
+    padding-bottom: 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+}
+.social-networks {
+    text-align: right;
+    display: block;
+    margin-top: 1em;
 }
 .social-networks > a:hover > .fa-facebook {
     color: #3b5998;
@@ -52,11 +98,13 @@ div.tint-overlay {
 .social-networks > a:hover > .fa-stack-overflow {
     color: #FF9900;
 }
+.social-networks > a:hover > .fa-github {
+    color: #4c4c4c;
+}
 .social-networks > a:hover > .fa-pencil {
     color: #339999;
 }
-
-div.footer{
+div.footer {
     z-index: 4;
     position: absolute;
     width: 100%;
@@ -64,8 +112,40 @@ div.footer{
     right: 0;
     left: 0;
 }
-
 .footer p {
-    font-size: 11px !important;
-    color: rgba(256,256,256,0.4) !important;
+    font-size: 12px !important;
+    font-weight: 300;
+    color: rgba(256, 256, 256, 0.4) !important;
+    text-align: center;
+}
+.avatar-wrapper {
+    margin-right: 20px;
+    margin-bottom: 1em;
+    text-align: right;
+    display: block;
+}
+.avatar {
+    border-radius: 50%;
+    width: 150px;
+}
+.name {
+    font-size: 100px;
+    font-weight: 300;
+    text-align: right;
+    display: block;
+    -webkit-margin-after: 0em;
+    -webkit-margin-before: 0em;
+    line-height: 0.75em;
+    margin-bottom: 0.3em;
+}
+.title {
+    font-size: 45px;
+    font-weight: 200;
+    right: 0px;
+    text-align: right;
+    display: block;
+}
+.small {
+    font-weight: 100;
+    font-size: 30px;
 }
