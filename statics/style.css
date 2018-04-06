@@ -93,7 +93,7 @@ div.tint-overlay-gradiant {
 .social-networks > a:hover > .fa-facebook {
     color: #3b5998;
 }
-.social-networks > a:hover > .fa-linkedin {
+.social-networks > a:hover > .fa-linkedin-in {
     color: #0077b5;
 }
 .social-networks > a:hover > .fa-twitter {
@@ -108,7 +108,7 @@ div.tint-overlay-gradiant {
 .social-networks > a:hover > .fa-github {
     color: #4c4c4c;
 }
-.social-networks > a:hover > .fa-pencil {
+.social-networks > a:hover > .fa-file-alt {
     color: #339999;
 }
 div.footer {
@@ -147,8 +147,8 @@ div.footer {
     margin-bottom: 0.3em;
 }
 .title {
-    font-size: 45px;
-    font-size: 5.75vh;
+    font-size: 50px;
+    font-size: 6.5vh;
     font-weight: 200;
     right: 0px;
     text-align: right;
@@ -158,4 +158,9 @@ div.footer {
     font-weight: 100;
     font-size: 30px;
     font-size: 3.75vh;
+}
+.too-small {
+    font-weight: 50;
+    font-size: 18px;
+    font-size: 2.75vh;
 }
